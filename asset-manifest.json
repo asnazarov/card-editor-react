@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.93d6e580.chunk.css",
-    "main.js": "/static/js/main.ddf23241.chunk.js",
-    "main.js.map": "/static/js/main.ddf23241.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.f2353a35.js",
-    "runtime-main.js.map": "/static/js/runtime-main.f2353a35.js.map",
-    "static/js/2.9318eb8d.chunk.js": "/static/js/2.9318eb8d.chunk.js",
-    "static/js/2.9318eb8d.chunk.js.map": "/static/js/2.9318eb8d.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.59302372ae8b2eaeef890b4909e7f6b6.js": "/precache-manifest.59302372ae8b2eaeef890b4909e7f6b6.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.93d6e580.chunk.css.map": "/static/css/main.93d6e580.chunk.css.map",
-    "static/js/2.9318eb8d.chunk.js.LICENSE.txt": "/static/js/2.9318eb8d.chunk.js.LICENSE.txt",
-    "static/media/userInfo.module.css": "/static/media/avatar.f6c49edb.jpg",
-    "static/media/close.svg": "/static/media/close.a3e3d9bd.svg",
-    "static/media/placeCard.module.css": "/static/media/trash-icon.18e456c4.svg",
-    "static/media/logo.svg": "/static/media/logo.9d0e3a93.svg"
+    "main.css": "/card-editor-react/static/css/main.0b929d0e.chunk.css",
+    "main.js": "/card-editor-react/static/js/main.8908cd5e.chunk.js",
+    "main.js.map": "/card-editor-react/static/js/main.8908cd5e.chunk.js.map",
+    "runtime-main.js": "/card-editor-react/static/js/runtime-main.ef9de8e9.js",
+    "runtime-main.js.map": "/card-editor-react/static/js/runtime-main.ef9de8e9.js.map",
+    "static/js/2.9318eb8d.chunk.js": "/card-editor-react/static/js/2.9318eb8d.chunk.js",
+    "static/js/2.9318eb8d.chunk.js.map": "/card-editor-react/static/js/2.9318eb8d.chunk.js.map",
+    "index.html": "/card-editor-react/index.html",
+    "precache-manifest.17a2eb2819f0ab27a11c8eae33085386.js": "/card-editor-react/precache-manifest.17a2eb2819f0ab27a11c8eae33085386.js",
+    "service-worker.js": "/card-editor-react/service-worker.js",
+    "static/css/main.0b929d0e.chunk.css.map": "/card-editor-react/static/css/main.0b929d0e.chunk.css.map",
+    "static/js/2.9318eb8d.chunk.js.LICENSE.txt": "/card-editor-react/static/js/2.9318eb8d.chunk.js.LICENSE.txt",
+    "static/media/userInfo.module.css": "/card-editor-react/static/media/avatar.f6c49edb.jpg",
+    "static/media/close.svg": "/card-editor-react/static/media/close.a3e3d9bd.svg",
+    "static/media/placeCard.module.css": "/card-editor-react/static/media/trash-icon.18e456c4.svg",
+    "static/media/logo.svg": "/card-editor-react/static/media/logo.9d0e3a93.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f2353a35.js",
+    "static/js/runtime-main.ef9de8e9.js",
     "static/js/2.9318eb8d.chunk.js",
-    "static/css/main.93d6e580.chunk.css",
-    "static/js/main.ddf23241.chunk.js"
+    "static/css/main.0b929d0e.chunk.css",
+    "static/js/main.8908cd5e.chunk.js"
   ]
 }
