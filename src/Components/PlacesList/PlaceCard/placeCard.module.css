@@ -1,0 +1,77 @@
+.placeCard {
+    width: 282px;
+    background-color: #fff;
+    border-radius: 10px;
+    min-height: 360px;
+}
+.placeCard__image {
+    height: 282px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+}
+
+.placeCard__image::after {
+    content: '';
+    display: block;
+    width: 282px;
+    height: 282px;
+    background-color: rgba(0, 0, 0, .3);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.placeCard__deleteIcon {
+    background: url(../../../images/trash-icon.svg) center no-repeat;
+    background-color: transparent;
+    border: none;
+    width: 18px;
+    height: 20px;
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+.placeCard:hover .placeCard__deleteIcon {
+    display: block;
+}
+.placeCard__description {
+    display: flex;
+    min-height: 78px;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 22px;
+}
+.placeCard__name {
+    margin: 0;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.placeCard__likeIcon {
+    background: url(../../../images/like-inactive.svg) center no-repeat;
+    background-color: transparent;
+    border: none;
+    width: 21px;
+    height: 19px;
+    cursor: pointer;
+    transition: transform .3s linear;
+}
+
+.placeCard__likeIconLiked {
+    background-image: url(../../../images/like-active.svg);
+}
+
+.placeCard__likeIcon:hover {
+    transform: scale(1.03);
+}
+
+.placeCard__likeNumber{
+    margin: 0;
+}
+
