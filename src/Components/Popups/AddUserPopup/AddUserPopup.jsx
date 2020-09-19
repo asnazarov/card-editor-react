@@ -7,7 +7,7 @@ function AddUserPopup() {
     <div id='addUserPopup' className={s.popup}>
       <div className={s.popup__content}>
         {/*<img src="<%=require('./images/close.svg')%>" alt="" className="popup__close">*/}
-        <img src={close} alt="" className="popup__close" />
+        {/*<img src={close} alt="" className="popup__close" />*/}
       </div>
      1233333333333333333
     </div>
