@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "701bfae564f009d2dd9b9643b3ccb7b1",
+    "revision": "e0b887bcb8368639c06a993776c70bb0",
     "url": "/card-editor-react/index.html"
   },
   {
-    "revision": "22ff37fdf57f03d670a8",
-    "url": "/card-editor-react/static/css/main.0b929d0e.chunk.css"
+    "revision": "84ddf554f1807fa95af3",
+    "url": "/card-editor-react/static/css/main.ce5bdef8.chunk.css"
   },
   {
-    "revision": "89037aed63fa5cf7110e",
-    "url": "/card-editor-react/static/js/2.9318eb8d.chunk.js"
+    "revision": "fcb0de791d850008cd36",
+    "url": "/card-editor-react/static/js/2.bf5d1a36.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/card-editor-react/static/js/2.9318eb8d.chunk.js.LICENSE.txt"
+    "url": "/card-editor-react/static/js/2.bf5d1a36.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "22ff37fdf57f03d670a8",
-    "url": "/card-editor-react/static/js/main.8908cd5e.chunk.js"
+    "revision": "84ddf554f1807fa95af3",
+    "url": "/card-editor-react/static/js/main.88211441.chunk.js"
   },
   {
     "revision": "2d3031e5cbf891ac7f94",
