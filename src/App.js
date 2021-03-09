@@ -2,7 +2,7 @@ import React from 'react';
 import s from './App.module.css';
 import Header from './Components/Header/Header.jsx';
 import Profile from './Components/Profile/Profile.jsx';
-import PlacesList from "./Components/PlacesList/PlacesList";
+import PlacesList from "./Components/PlaceLists/PlaceLists";
 
 function App() {
   return (

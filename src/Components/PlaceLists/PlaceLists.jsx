@@ -4,7 +4,7 @@ import root from '../../App.module.css';
 import PlacesCard from "./PlaceCard/PlaceCard";
 import api from "../api";
 
-function PlacecList() {
+function PlaceLists() {
   const [cards, setCards] = useState([])
   useEffect(() => {
     api.getInitialCards()
@@ -24,4 +24,4 @@ function PlacecList() {
   );
 }
 
-export default PlacecList;
+export default PlaceLists;
