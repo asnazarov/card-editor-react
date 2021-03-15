@@ -1,1 +1,1 @@
-# card-editor-react
+# popup-editor-react
