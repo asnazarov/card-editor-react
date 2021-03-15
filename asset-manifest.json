@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/card-editor-react/static/css/main.ce5bdef8.chunk.css",
-    "main.js": "/card-editor-react/static/js/main.88211441.chunk.js",
-    "main.js.map": "/card-editor-react/static/js/main.88211441.chunk.js.map",
+    "main.css": "/card-editor-react/static/css/main.ec991cff.chunk.css",
+    "main.js": "/card-editor-react/static/js/main.d7108867.chunk.js",
+    "main.js.map": "/card-editor-react/static/js/main.d7108867.chunk.js.map",
     "runtime-main.js": "/card-editor-react/static/js/runtime-main.ef9de8e9.js",
     "runtime-main.js.map": "/card-editor-react/static/js/runtime-main.ef9de8e9.js.map",
-    "static/js/2.bf5d1a36.chunk.js": "/card-editor-react/static/js/2.bf5d1a36.chunk.js",
-    "static/js/2.bf5d1a36.chunk.js.map": "/card-editor-react/static/js/2.bf5d1a36.chunk.js.map",
+    "static/js/2.11ed7261.chunk.js": "/card-editor-react/static/js/2.11ed7261.chunk.js",
+    "static/js/2.11ed7261.chunk.js.map": "/card-editor-react/static/js/2.11ed7261.chunk.js.map",
     "index.html": "/card-editor-react/index.html",
-    "precache-manifest.1e2076222e10930e6169000a643a27f8.js": "/card-editor-react/precache-manifest.1e2076222e10930e6169000a643a27f8.js",
+    "precache-manifest.34262d0c904370909fb1ec70c8dbfedb.js": "/card-editor-react/precache-manifest.34262d0c904370909fb1ec70c8dbfedb.js",
     "service-worker.js": "/card-editor-react/service-worker.js",
-    "static/css/main.ce5bdef8.chunk.css.map": "/card-editor-react/static/css/main.ce5bdef8.chunk.css.map",
-    "static/js/2.bf5d1a36.chunk.js.LICENSE.txt": "/card-editor-react/static/js/2.bf5d1a36.chunk.js.LICENSE.txt",
+    "static/css/main.ec991cff.chunk.css.map": "/card-editor-react/static/css/main.ec991cff.chunk.css.map",
+    "static/js/2.11ed7261.chunk.js.LICENSE.txt": "/card-editor-react/static/js/2.11ed7261.chunk.js.LICENSE.txt",
     "static/media/userInfo.module.css": "/card-editor-react/static/media/avatar.f6c49edb.jpg",
     "static/media/close.svg": "/card-editor-react/static/media/close.a3e3d9bd.svg",
     "static/media/placeCard.module.css": "/card-editor-react/static/media/trash-icon.18e456c4.svg",
@@ -19,8 +19,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.ef9de8e9.js",
-    "static/js/2.bf5d1a36.chunk.js",
-    "static/css/main.ce5bdef8.chunk.css",
-    "static/js/main.88211441.chunk.js"
+    "static/js/2.11ed7261.chunk.js",
+    "static/css/main.ec991cff.chunk.css",
+    "static/js/main.d7108867.chunk.js"
   ]
 }
