@@ -1,4 +1,5 @@
 const serverUrl = 'https://nomoreparties.co/cohort11';
+// const serverUrl = 'https://mesto.nomoreparties.co/v1/cohort-42';
 
 class Api {
   constructor(options) {
@@ -9,6 +10,7 @@ class Api {
       method: "GET",
       headers: {
         authorization: 'f19dbf25-1050-4e87-9f03-ebd68dde2c37',
+        // authorization: 'c56e30dc-2883-4270-a59e-b2f7bae969c6', // cohort-42
         'Content-Type': 'application/json'
       }
     })
@@ -26,6 +28,7 @@ class Api {
       method: "GET",
       headers: {
         authorization: 'f19dbf25-1050-4e87-9f03-ebd68dde2c37',
+        // authorization: 'c56e30dc-2883-4270-a59e-b2f7bae969c6',  // cohort-42
         'Content-Type': 'application/json'
       }
     })
@@ -43,6 +46,7 @@ const api = new Api({
   baseUrl: serverUrl,
   headers: {
     authorization: 'f19dbf25-1050-4e87-9f03-ebd68dde2c37',
+    // authorization: 'c56e30dc-2883-4270-a59e-b2f7bae969c6',  // cohort-42
     'Content-Type': 'application/json'
   },
 });
