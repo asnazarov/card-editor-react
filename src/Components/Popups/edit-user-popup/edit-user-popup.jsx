@@ -27,7 +27,8 @@ const EditUserPopup = () => {
   const onSubmitDataUser = (e) => {
     e.preventDefault()
     dispatch(patchEditUser({type: EDIT_USER, payload: valueInput}))
-    dispatch({type: PATCH_USER})
+    dispatch(setOpenPopupEdit({type: OPEN_EDIT_POPUP, payload: false}))
+    dispatch({type: PATCH_USER}) // saga
   }
 
   return (
@@ -42,12 +43,12 @@ const EditUserPopup = () => {
         <form onSubmit={onSubmitDataUser} className={style.popup__form} noValidate name="new">
           <div className="input-container ">
             <input onChange={onChangeName} id="name" type="text" minLength="2" maxLength="30" name="name" required
-                   className={style.popup__input} placeholder="Имя"
+                   className={style.popup__input} placeholder="Имя" required
             />
             <span id="name-error" className={style.error}/>
             <div className="input-container ">
               <input onChange={onChangeAbout} id="job" type="text" minLength="2" maxLength="30" name="job" required
-                     className={style.popup__input} placeholder="О себе"/>
+                     className={style.popup__input} placeholder="О себе" required/>
               <span id="job-error" className={style.error}/>
             </div>
             <Button type={typeButtons.editSubmit}

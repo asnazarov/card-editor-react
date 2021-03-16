@@ -8,7 +8,7 @@ export const setOpenPopupEdit = (act) => ({
 
 export const setOpenPopupAddCard = (act) => ({
   type: OPEN_ADD_CARD_POPUP,
-  payload: act
+  payload: act.payload
 })
 
 export const setOpenPopupImage = (act) => ({
