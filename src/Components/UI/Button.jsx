@@ -15,7 +15,7 @@ const Button = ({type, className}) => {
         className={classNames(style.button, className)}
       >Сохранить</button>
     case typeButtons.addCardSubmit :
-      return <button
+      return <button type='submit'
         className={classNames(style.button, className)}
       >Сохранить</button>
   }

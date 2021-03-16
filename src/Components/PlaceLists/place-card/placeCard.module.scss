@@ -1,5 +1,6 @@
 .placeCard {
     width: 282px;
+    position: relative;
     background-color: #fff;
     border-radius: 10px;
     min-height: 360px;
@@ -34,6 +35,9 @@
     right: 15px;
     cursor: pointer;
     display: none;
+    &:focus {
+        outline: none;
+    }
 }
 
 .placeCard:hover .placeCard__deleteIcon {
