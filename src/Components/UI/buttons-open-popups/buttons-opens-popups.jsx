@@ -19,6 +19,7 @@ const ButtonOpenPopup = ({type, className, disabled}) => {
         onClick={openPopupAddCard}
         className={classNames(style.button, className)}
         disabled={disabled}
+        style={{cursor: disabled ? 'wait' : 'pointer'}}
       >+</button>
     case typeButtons.openPopupEdit :
       return <button

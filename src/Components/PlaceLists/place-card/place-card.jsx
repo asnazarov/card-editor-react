@@ -4,12 +4,14 @@ import style from './placeCard.module.scss'
 import {deleteCardAction} from "../../../redux/actions/cardsAction";
 import {DELETE_CARD, DELETE_CARD_SAGA} from "../../../redux/constants";
 
-function PlacesCard({item, openPopupImage}) {
+function PlacesCard({item, items, setItems, openPopupImage}) {
   const dispatch = useDispatch()
 
   const deleteCard = (item) => {
     dispatch(deleteCardAction({type: DELETE_CARD, payload: item._id}))
     dispatch({type: DELETE_CARD_SAGA})
+    const newValue = items.filter(obj => obj !== item )
+    setItems(newValue)
   }
 
   return (

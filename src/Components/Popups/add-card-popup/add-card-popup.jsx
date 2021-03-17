@@ -21,8 +21,6 @@ const AddCardPopup = () => {
   const onSubmitAddCard = (e) => {
     e.preventDefault();
     dispatch(addCardAction({type: ADD_CARD, payload: addCardValue}))
-
-
     dispatch(setOpenPopupAddCard({type: OPEN_ADD_CARD_POPUP, payload: false}))
     dispatch({type: POST_ADD_CARD})
   }
