@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/card-editor-react/static/css/main.365054f4.chunk.css",
-    "main.js": "/card-editor-react/static/js/main.f3e6ab31.chunk.js",
-    "main.js.map": "/card-editor-react/static/js/main.f3e6ab31.chunk.js.map",
+    "main.js": "/card-editor-react/static/js/main.e910a3f9.chunk.js",
+    "main.js.map": "/card-editor-react/static/js/main.e910a3f9.chunk.js.map",
     "runtime-main.js": "/card-editor-react/static/js/runtime-main.ef9de8e9.js",
     "runtime-main.js.map": "/card-editor-react/static/js/runtime-main.ef9de8e9.js.map",
     "static/js/2.ef4f9ba4.chunk.js": "/card-editor-react/static/js/2.ef4f9ba4.chunk.js",
     "static/js/2.ef4f9ba4.chunk.js.map": "/card-editor-react/static/js/2.ef4f9ba4.chunk.js.map",
     "index.html": "/card-editor-react/index.html",
-    "precache-manifest.7398682e0db14a2d953e79fd853f9faa.js": "/card-editor-react/precache-manifest.7398682e0db14a2d953e79fd853f9faa.js",
+    "precache-manifest.8cb08ccf327770a5d8a18d74701ec0f0.js": "/card-editor-react/precache-manifest.8cb08ccf327770a5d8a18d74701ec0f0.js",
     "service-worker.js": "/card-editor-react/service-worker.js",
     "static/css/main.365054f4.chunk.css.map": "/card-editor-react/static/css/main.365054f4.chunk.css.map",
     "static/js/2.ef4f9ba4.chunk.js.LICENSE.txt": "/card-editor-react/static/js/2.ef4f9ba4.chunk.js.LICENSE.txt",
@@ -21,6 +21,6 @@
     "static/js/runtime-main.ef9de8e9.js",
     "static/js/2.ef4f9ba4.chunk.js",
     "static/css/main.365054f4.chunk.css",
-    "static/js/main.f3e6ab31.chunk.js"
+    "static/js/main.e910a3f9.chunk.js"
   ]
 }
