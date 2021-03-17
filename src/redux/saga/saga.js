@@ -14,19 +14,26 @@ const getUser = () => axios.get(`${baseUrl}/users/me`, config)
 const postAddCard = (data) => axios.post(`${baseUrl}/cards`, data, config)
 const deleteCard = (id) => axios.delete(`${baseUrl}/cards/${id}`, config)
 
-function* sagaDeleteCard () {
+function* sagaDeleteCard() {
   const {cards} = yield select()
   const id = cards.deleteCardId
   yield call(deleteCard, id)
-  console.log(cards.deleteCardId)
+  // console.log(cards.deleteCardId)
 }
 
-function* sagaPostAddCard (){
+function* sagaPostAddCard() {
   try {
     const {cards} = yield select()
-    yield put(addCardAction({type: ADD_CARD, payload: cards.createCard}))
-    yield call(postAddCard, cards.createCard)
-  } catch (err){
+    const response = yield call(postAddCard, cards.createCard)
+    let data;
+    data = {
+      _id: response.data._id,
+      link: response.data.link,
+      name: response.data.name,
+      likes: response.data.likes,
+    }
+    yield put(addCardAction({type: ADD_CARD, payload: data}))
+  } catch (err) {
     console.log(err)
   }
 }
@@ -36,7 +43,7 @@ function* sagaGetUser() {
     const response = yield call(getUser)
     yield put({type: EDIT_USER, payload: response.data})
 
-  } catch (err){
+  } catch (err) {
     console.log(err)
   }
 }

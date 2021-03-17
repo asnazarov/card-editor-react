@@ -17,10 +17,12 @@ function PlaceLists() {
   const [itemLink, setItemLink] = useState('')
   const [items, setItems] = useState([])
 
-  useEffect(() => {setItems(cards)}, [cards])
+  useEffect(() => {
+    setItems(cards)
+  }, [cards])
 
   useEffect(() => {
-  cards.length !==0 && setItems([...items, newCard])
+    cards.length !== 0 && newCard._id !== undefined && setItems([...items, newCard])
   }, [newCard])
 
   const openPopupImage = (item) => {
@@ -30,7 +32,7 @@ function PlaceLists() {
 
   return (
     <div className={[s.placesList, root.root__section].join(' ')}>
-      {items.map(item => <PlacesCard openPopupImage={openPopupImage} item={item}/>)}
+      {items.map(item => <PlacesCard openPopupImage={openPopupImage} setItems={setItems} item={item} items={items}/>)}
       {popupStore.openImage && <ImagePopup itemLink={itemLink}/>}
     </div>
   );

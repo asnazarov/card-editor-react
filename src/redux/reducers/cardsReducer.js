@@ -3,6 +3,7 @@ import {ADD_CARD, DELETE_CARD, LOAD_CARDS} from "../constants";
 const initialState = {
   items: [],
   createCard: {
+    _id: '',
     link: '',
     name: '',
     likes: []
@@ -22,6 +23,7 @@ const cards = (state = initialState, action) => {
     case ADD_CARD:
       let data
       data = {
+        _id: action.payload._id,
         link: action.payload.link,
         name: action.payload.name,
         likes: [],
