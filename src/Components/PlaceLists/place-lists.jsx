@@ -12,18 +12,13 @@ import {setOpenPopupImage} from "../../redux/actions/popupAction";
 function PlaceLists() {
   const dispatch = useDispatch()
   const cards = useSelector(({cards}) => cards.items)
-  const newCard = useSelector(({cards}) => cards.createCard)
   const popupStore = useSelector(({popup}) => popup)
   const [itemLink, setItemLink] = useState('')
   const [items, setItems] = useState([])
 
   useEffect(() => {
     setItems(cards)
-  }, [cards])
-
-  useEffect(() => {
-    cards.length !== 0 && newCard._id !== undefined && setItems([...items, newCard])
-  }, [newCard])
+  }, [cards || items])
 
   const openPopupImage = (item) => {
     setItemLink(item.link)
@@ -32,7 +27,7 @@ function PlaceLists() {
 
   return (
     <div className={[s.placesList, root.root__section].join(' ')}>
-      {items.map(item => <PlacesCard openPopupImage={openPopupImage} setItems={setItems} item={item} items={items}/>)}
+      {items.map(item => <PlacesCard openPopupImage={openPopupImage} item={item}/>)}
       {popupStore.openImage && <ImagePopup itemLink={itemLink}/>}
     </div>
   );
