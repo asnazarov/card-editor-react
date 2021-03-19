@@ -1,17 +1,29 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import {useDispatch, useSelector} from "react-redux";
 import style from './placeCard.module.scss'
-import {deleteCardAction} from "../../../redux/actions/cardsAction";
-import {DELETE_CARD, DELETE_CARD_SAGA} from "../../../redux/constants";
 
-function PlacesCard({item, items, setItems, openPopupImage}) {
+import {deleteCardAction, likeCardAction} from "../../../redux/actions/cardsAction";
+import {DELETE_CARD, DELETE_CARD_SAGA, LIKE_CARD, LIKE_CARD_SAGA} from "../../../redux/constants";
+import {likeActive, likeInActive} from "../../../images";
+
+function PlacesCard({item, openPopupImage}) {
   const dispatch = useDispatch()
+  const user = useSelector(({user}) => user)
+  const [likeIsActive, setLikeIsActive] = useState(false)
+
+  useEffect(() => {
+    const activeLike = item.likes.filter(like => like._id === user.user._id).length === 1
+    setLikeIsActive(activeLike)
+  }, [item])
 
   const deleteCard = (item) => {
     dispatch(deleteCardAction({type: DELETE_CARD, payload: item._id}))
     dispatch({type: DELETE_CARD_SAGA})
-    const newValue = items.filter(obj => obj !== item )
-    setItems(newValue)
+  }
+
+  const likeCard = (id) => {
+      dispatch(likeCardAction({type: LIKE_CARD, payload: {likeId: id, removeLike: likeIsActive ? true : likeIsActive}}))
+      dispatch({type: LIKE_CARD_SAGA})
   }
 
   return (
@@ -24,7 +36,10 @@ function PlacesCard({item, items, setItems, openPopupImage}) {
       <div className={style.placeCard__description}>
         <h3 className={style.placeCard__name}>{item.name}</h3>
         <div>
-          <button className={style.placeCard__likeIcon}/>
+          <img onClick={_ => likeCard(item._id)}
+               src={likeIsActive ? likeActive : likeInActive}
+               alt="like"
+               className={style.placeCard__likeIcon}/>
           <p className={style.placeCard__likeNumber}>{item.likes.length}</p>
         </div>
       </div>

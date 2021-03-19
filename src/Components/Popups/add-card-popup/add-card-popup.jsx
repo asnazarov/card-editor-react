@@ -7,20 +7,18 @@ import style from '../popup.module.scss';
 import Button from "../../UI/Button";
 import {typeButtons} from "../../../constants/constants";
 import {setOpenPopupAddCard} from "../../../redux/actions/popupAction";
-import {addCardAction} from "../../../redux/actions/cardsAction";
-import {ADD_CARD, OPEN_ADD_CARD_POPUP, POST_ADD_CARD} from "../../../redux/constants";
+import {addCardAction, createCardAction} from "../../../redux/actions/cardsAction";
+import {ADD_CARD, CREATE_CARD, OPEN_ADD_CARD_POPUP, POST_ADD_CARD} from "../../../redux/constants";
 
 const AddCardPopup = () => {
   const dispatch = useDispatch()
-
-  // const cards = useSelector(({cards}) => cards.items)
   const [addCardValue, setAddCardValue] = useState({name: '', link: ''})
 
   const onChangeName = (e) => setAddCardValue({...addCardValue, name: e.target.value})
   const onChangeLink = (e) => setAddCardValue({...addCardValue, link: e.target.value})
   const onSubmitAddCard = (e) => {
     e.preventDefault();
-    dispatch(addCardAction({type: ADD_CARD, payload: addCardValue}))
+    dispatch(createCardAction({type: CREATE_CARD, payload: addCardValue}))
     dispatch(setOpenPopupAddCard({type: OPEN_ADD_CARD_POPUP, payload: false}))
     dispatch({type: POST_ADD_CARD})
   }
