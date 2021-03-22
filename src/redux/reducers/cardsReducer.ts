@@ -1,4 +1,17 @@
 import {ADD_CARD, CREATE_CARD, DELETE_CARD, FAVORITE_CARD, LIKE_CARD, LOAD_CARDS} from "../constants";
+import {CardType} from "../../constants/types";
+
+type initialStateType = {
+  items: Array<CardType>,
+  createCard: {
+    name: string | number,
+    link: string | number
+  },
+  addCard: CardType,
+  deleteCardId: string | number,
+  likeId: string,
+  removeLike: boolean,
+}
 
 const initialState = {
   items: [],
@@ -18,7 +31,7 @@ const initialState = {
 
 }
 
-const cards = (state = initialState, action) => {
+const cards = (state:initialStateType = initialState, action:any):initialStateType => {
 
   console.log(action)
   switch (action.type) {
@@ -36,7 +49,7 @@ const cards = (state = initialState, action) => {
         }
       }
     case ADD_CARD:
-      let data
+      let data: CardType
       data = {
         likes: [],
         _id: action.payload._id,
@@ -49,7 +62,7 @@ const cards = (state = initialState, action) => {
         items: [...state.items, data]
       }
     case DELETE_CARD :
-      const newValue = state.items.filter(obj => obj._id !== action.payload)
+      const newValue = state.items.filter((obj) => obj._id !== action.payload)
       return {
         ...state,
         deleteCardId: action.payload,

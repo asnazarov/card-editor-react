@@ -7,12 +7,14 @@ import PlacesCard from "./place-card/place-card";
 import {OPEN_IMAGE_POPUP} from "../../redux/constants";
 import ImagePopup from "../Popups/image-popup/image-popup";
 import {setOpenPopupImage} from "../../redux/actions/popupAction";
+import {appGlobalStore} from "../../redux/store";
+import {CardType} from "../../constants/types";
 
 
 function PlaceLists() {
   const dispatch = useDispatch()
-  const cards = useSelector(({cards}) => cards.items)
-  const popupStore = useSelector(({popup}) => popup)
+  const cards = useSelector(({cards}:any) => cards.items)
+  const popupStore = useSelector(({popup}:appGlobalStore) => popup)
   const [itemLink, setItemLink] = useState('')
   const [items, setItems] = useState([])
 
@@ -20,7 +22,7 @@ function PlaceLists() {
     setItems(cards)
   }, [cards || items])
 
-  const openPopupImage = (item) => {
+  const openPopupImage = (item:CardType) => {
     setItemLink(item.link)
     dispatch(setOpenPopupImage({type: OPEN_IMAGE_POPUP, payload: true}))
   }

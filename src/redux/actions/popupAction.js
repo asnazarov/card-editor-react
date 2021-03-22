@@ -1,4 +1,4 @@
-import {EDIT_USER, OPEN_ADD_CARD_POPUP, OPEN_EDIT_POPUP, OPEN_IMAGE_POPUP} from "../constants";
+import {OPEN_ADD_CARD_POPUP, OPEN_EDIT_POPUP, OPEN_IMAGE_POPUP} from "../constants";
 
 
 export const setOpenPopupEdit = (act) => ({
@@ -16,7 +16,3 @@ export const setOpenPopupImage = (act) => ({
   payload: act.payload,
 })
 
-export const patchEditUser = (data) => ({
-  type: EDIT_USER,
-  payload: data.payload
-})

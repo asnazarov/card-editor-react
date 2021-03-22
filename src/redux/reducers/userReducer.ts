@@ -1,4 +1,5 @@
 import {EDIT_USER} from "../constants";
+import {UserType} from "../../constants/types";
 
 const initialState = {
   user: {
@@ -7,10 +8,10 @@ const initialState = {
     cohort: '',
     name: '',
     _id: '',
-  }
+  } as UserType
 }
-
-const user = (state = initialState, action) => {
+export type initialStateType = typeof initialState
+const user = (state = initialState, action: any): initialStateType => {
   switch (action.type) {
     case EDIT_USER:
       return {

@@ -7,7 +7,8 @@ import {
   POST_ADD_CARD,
   ADD_CARD,
   DELETE_CARD_SAGA,
-  LIKE_CARD_SAGA, FAVORITE_CARD
+  LIKE_CARD_SAGA,
+  FAVORITE_CARD
 } from "../constants";
 import {addCardAction, favoriteCardAction} from "../actions/cardsAction";
 
