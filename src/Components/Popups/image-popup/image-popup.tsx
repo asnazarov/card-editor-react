@@ -5,11 +5,15 @@ import closeSvg from '../images/close.svg';
 import {setOpenPopupImage} from "../../../redux/actions/popupAction";
 import {OPEN_IMAGE_POPUP} from "../../../redux/constants";
 
-const ImagePopup = ({itemLink}) => {
+type ImagePopupType = {
+  itemLink: string
+}
+
+const ImagePopup: React.FC<ImagePopupType> = ({itemLink}) => {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    document.addEventListener('keydown', e => {
+    document.addEventListener('keydown', (e: KeyboardEvent) => {
       String(e.key) === 'Escape' && dispatch(setOpenPopupImage({type: OPEN_IMAGE_POPUP, payload: false}))
     })
   }, [])

@@ -15,11 +15,11 @@ type PropsType = {
 
 const PlacesCard: React.FC<PropsType> = ({item, openPopupImage}) => {
   const dispatch = useDispatch()
-  const user = useSelector(({user}: appGlobalStore) => user)
+  const user = useSelector(({user}: appGlobalStore) => user.user)
   const [likeIsActive, setLikeIsActive] = useState(false)
 
   useEffect(() => {
-    const activeLike = item.likes.filter((like: UserType) => like._id === user.user._id).length === 1
+    const activeLike = item.likes.filter((item) => item._id === user._id).length === 1
     setLikeIsActive(activeLike)
   }, [item])
 

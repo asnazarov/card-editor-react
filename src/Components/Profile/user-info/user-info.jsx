@@ -6,7 +6,7 @@ import {typeButtons} from "../../../constants/constants";
 import ButtonOpenPopup from "../../UI/buttons-open-popups/buttons-opens-popups";
 import AddCardPopup from "../../Popups/add-card-popup/add-card-popup";
 
-const UserInfo = ({popupStore}) => {
+const UserInfo= ({popupStore}) => {
   const cards = useSelector(({cards}) => cards.items)
   const {user} = useSelector(({user}) => user)
   const [disabled, setDisabled] = useState(false)
