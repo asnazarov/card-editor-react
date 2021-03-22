@@ -5,25 +5,32 @@ import style from './placeCard.module.scss'
 import {deleteCardAction, likeCardAction} from "../../../redux/actions/cardsAction";
 import {DELETE_CARD, DELETE_CARD_SAGA, LIKE_CARD, LIKE_CARD_SAGA} from "../../../redux/constants";
 import {likeActive, likeInActive} from "../../../images";
+import {CardType, UserType} from "../../../constants/types";
+import {appGlobalStore} from "../../../redux/store";
 
-function PlacesCard({item, openPopupImage}) {
+type PropsType = {
+  item: CardType,
+  openPopupImage: (item: CardType) => void
+}
+
+const PlacesCard: React.FC<PropsType> = ({item, openPopupImage}) => {
   const dispatch = useDispatch()
-  const user = useSelector(({user}) => user)
+  const user = useSelector(({user}: appGlobalStore) => user)
   const [likeIsActive, setLikeIsActive] = useState(false)
 
   useEffect(() => {
-    const activeLike = item.likes.filter(like => like._id === user.user._id).length === 1
+    const activeLike = item.likes.filter((like: UserType) => like._id === user.user._id).length === 1
     setLikeIsActive(activeLike)
   }, [item])
 
-  const deleteCard = (item) => {
+  const deleteCard = (item: CardType) => {
     dispatch(deleteCardAction({type: DELETE_CARD, payload: item._id}))
     dispatch({type: DELETE_CARD_SAGA})
   }
 
-  const likeCard = (id) => {
-      dispatch(likeCardAction({type: LIKE_CARD, payload: {likeId: id, removeLike: likeIsActive ? true : likeIsActive}}))
-      dispatch({type: LIKE_CARD_SAGA})
+  const likeCard = (id: string) => {
+    dispatch(likeCardAction({type: LIKE_CARD, payload: {likeId: id, removeLike: likeIsActive ? true : likeIsActive}}))
+    dispatch({type: LIKE_CARD_SAGA})
   }
 
   return (
