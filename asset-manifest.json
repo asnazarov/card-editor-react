@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/card-editor-react/static/css/main.7697b6b7.chunk.css",
-    "main.js": "/card-editor-react/static/js/main.392c713c.chunk.js",
-    "main.js.map": "/card-editor-react/static/js/main.392c713c.chunk.js.map",
+    "main.css": "/card-editor-react/static/css/main.011c40c9.chunk.css",
+    "main.js": "/card-editor-react/static/js/main.8697f77d.chunk.js",
+    "main.js.map": "/card-editor-react/static/js/main.8697f77d.chunk.js.map",
     "runtime-main.js": "/card-editor-react/static/js/runtime-main.ef9de8e9.js",
     "runtime-main.js.map": "/card-editor-react/static/js/runtime-main.ef9de8e9.js.map",
-    "static/js/2.d4ff09d3.chunk.js": "/card-editor-react/static/js/2.d4ff09d3.chunk.js",
-    "static/js/2.d4ff09d3.chunk.js.map": "/card-editor-react/static/js/2.d4ff09d3.chunk.js.map",
+    "static/js/2.d245d8b3.chunk.js": "/card-editor-react/static/js/2.d245d8b3.chunk.js",
+    "static/js/2.d245d8b3.chunk.js.map": "/card-editor-react/static/js/2.d245d8b3.chunk.js.map",
     "index.html": "/card-editor-react/index.html",
-    "precache-manifest.bc73f85a3c8bef2f727b7d323759dbe7.js": "/card-editor-react/precache-manifest.bc73f85a3c8bef2f727b7d323759dbe7.js",
+    "precache-manifest.4094432408dee7ad60a83c8116599f4b.js": "/card-editor-react/precache-manifest.4094432408dee7ad60a83c8116599f4b.js",
     "service-worker.js": "/card-editor-react/service-worker.js",
-    "static/css/main.7697b6b7.chunk.css.map": "/card-editor-react/static/css/main.7697b6b7.chunk.css.map",
-    "static/js/2.d4ff09d3.chunk.js.LICENSE.txt": "/card-editor-react/static/js/2.d4ff09d3.chunk.js.LICENSE.txt",
-    "static/media/userInfo.module.css": "/card-editor-react/static/media/avatar.f6c49edb.jpg",
+    "static/css/main.011c40c9.chunk.css.map": "/card-editor-react/static/css/main.011c40c9.chunk.css.map",
+    "static/js/2.d245d8b3.chunk.js.LICENSE.txt": "/card-editor-react/static/js/2.d245d8b3.chunk.js.LICENSE.txt",
+    "static/media/userInfo.module.scss": "/card-editor-react/static/media/avatar.f6c49edb.jpg",
     "static/media/close.svg": "/card-editor-react/static/media/close.a3e3d9bd.svg",
     "static/media/like-active.svg": "/card-editor-react/static/media/like-active.429c8752.svg",
     "static/media/like-inactive.svg": "/card-editor-react/static/media/like-inactive.ed9e50d5.svg",
@@ -21,8 +21,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.ef9de8e9.js",
-    "static/js/2.d4ff09d3.chunk.js",
-    "static/css/main.7697b6b7.chunk.css",
-    "static/js/main.392c713c.chunk.js"
+    "static/js/2.d245d8b3.chunk.js",
+    "static/css/main.011c40c9.chunk.css",
+    "static/js/main.8697f77d.chunk.js"
   ]
 }
