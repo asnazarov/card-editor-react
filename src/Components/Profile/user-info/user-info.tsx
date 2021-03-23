@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {useSelector} from "react-redux";
 
-import style from './userInfo.module.css'
+import style from './userInfo.module.scss'
 import {typeButtons} from "../../../constants/constants";
 import ButtonOpenPopup from "../../UI/buttons-open-popups/buttons-opens-popups";
 import AddCardPopup from "../../Popups/add-card-popup/add-card-popup";

@@ -3,7 +3,7 @@ import classNames from 'classnames'
 import {useDispatch} from "react-redux";
 
 import {typeButtons} from "../../../constants/constants";
-import style from '../button.module.css'
+import style from '../button.module.scss'
 import {setOpenPopupAddCard, setOpenPopupEdit} from "../../../redux/actions/popupAction";
 import {OPEN_ADD_CARD_POPUP, OPEN_EDIT_POPUP} from "../../../redux/constants";
 import {strict} from "assert";

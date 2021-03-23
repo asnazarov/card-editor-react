@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames'
 
 import {typeButtons} from "../../constants/constants";
-import style from './button.module.css'
+import style from './button.module.scss'
 
 type ButtonType = {
   type: string,
