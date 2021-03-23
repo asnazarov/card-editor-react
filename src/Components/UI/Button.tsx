@@ -1,22 +1,24 @@
 import React from 'react';
 import classNames from 'classnames'
-import {useDispatch} from "react-redux";
 
 import {typeButtons} from "../../constants/constants";
 import style from './button.module.css'
-import {setOpenPopupEdit} from "../../redux/actions/popupAction";
 
-const Button = ({type, className}) => {
-  const dispatch = useDispatch()
+type ButtonType = {
+  type: string,
+  className: string,
+}
+
+const Button: React.FC<ButtonType> = ({type, className}) => {
 
   switch (type) {
     case typeButtons.editSubmit :
       return <button type='submit'
-        className={classNames(style.button, className)}
+                     className={classNames(style.button, className)}
       >Сохранить</button>
     case typeButtons.addCardSubmit :
       return <button type='submit'
-        className={classNames(style.button, className)}
+                     className={classNames(style.button, className)}
       >Сохранить</button>
   }
 
