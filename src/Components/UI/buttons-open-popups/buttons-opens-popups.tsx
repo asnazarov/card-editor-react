@@ -6,8 +6,15 @@ import {typeButtons} from "../../../constants/constants";
 import style from '../button.module.css'
 import {setOpenPopupAddCard, setOpenPopupEdit} from "../../../redux/actions/popupAction";
 import {OPEN_ADD_CARD_POPUP, OPEN_EDIT_POPUP} from "../../../redux/constants";
+import {strict} from "assert";
 
-const ButtonOpenPopup = ({type, className, disabled}) => {
+type ButtonOpenPopupType = {
+  type: string,
+  className: string,
+  disabled: boolean,
+}
+
+const ButtonOpenPopup: React.FC<ButtonOpenPopupType> = ({type, className, disabled}):any => {
   const dispatch = useDispatch()
 
   const openPopupAddCard = () => dispatch(setOpenPopupAddCard({type: OPEN_ADD_CARD_POPUP, payload: true}))
