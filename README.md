@@ -15,8 +15,9 @@
 * nested структура стилей;
 
 ### Развёртывание проекта:
-* Клонировать репозиторий в терминал командой: ```git clone https://github.com/asnazarov/project_Mesto.git```
-* Установка зависмостей: ```npm i```
+* Клонировать репозиторий в терминале командой: ```git clone https://github.com/asnazarov/project_Mesto.git```
+* Открыть папку с проектом в редакторе кода
+* Установка зависмостей в терминале редактора: ```npm i```
 * Создание production-сборки: ```npm run build```
 * Запуск тестовой сборки на локальном сервере: ```npm run dev```
 * Публикация production-сборки на GitHub Pages: ```npm run deploy```
